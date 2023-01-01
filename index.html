@@ -115,6 +115,35 @@ footer{
     align-items: center;
     padding: 11px;
 }
+
+/* mediaQueries */
+
+@media (min-width: 273px) and (max-width: 623px)  {
+    header picture{
+    padding: 2px 3px 2px 0px;
+  } 
+
+    header nav .ul-nav{
+        padding: 2px 0px 2px 3px;        
+        margin: 2px 11px 2px 3px;               
+    }
+
+    .card-section{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr;
+    }
+
+    .profile-picture{        
+        grid-row: 1;
+    }
+
+    .div-info{
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+}
     </style>
 
     <script src="https://kit.fontawesome.com/a2dc166a48.js" crossorigin="anonymous"></script>
@@ -136,12 +165,11 @@ footer{
     </header>
     
     <main>
-
-        <section class="card-section">            
-            <div >
+        <section class="grid-container card-section">            
+            <div class=" div-info">
                 <div class="h-section">
                     <h3>Diego Toro Cárdenas</h3>
-                    <p class="description-profile">Artist, designer, researcher, full stack JS and C# encoder, innovator... &#9749; and I am deeply in love with women and I am a hopeless romantic &#128152;. <br>
+                    <p class="description-profile">Artist, designer, researcher, innovator, encoder... &#9749; and I am deeply in love with women and I am a hopeless romantic &#128152;. <br>
                         I will be superman, I will save the world... &#127760; and I will conquer a mermaid of the sea &#129500;.
                     </p>
                     <p>Also I've got three tattoos &#9875;.</p>
@@ -154,11 +182,11 @@ footer{
                     <a href="https://www.linkedin.com/in/torocardo/"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
             </div>
+            <picture class="profile-picture">
+                <img src="https://pbs.twimg.com/profile_images/1429605838419865602/v5TyrAVL_400x400.jpg" alt="Profile picture">
+            </picture>
         </section>
 
-        <picture class="profile-picture">
-            <img src="https://pbs.twimg.com/profile_images/1429605838419865602/v5TyrAVL_400x400.jpg" alt="Profile picture">
-        </picture>
     </main>
 
     <hr>
